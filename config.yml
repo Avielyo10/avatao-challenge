@@ -1,0 +1,38 @@
+# Version of the config.yml
+version: "v2.0.0"
+
+# Name of the challenge
+name: "Integer Overflow - 102"
+
+# Challenge difficulty: 10 - 500
+difficulty: 100
+
+# Enable inputbox to submit flag: true | false
+enable_flag_input: true
+
+# If the solution is a fix string (static flag) you can add it here
+flag: "flag"
+
+# Skills related to the challenge: ["SQL injection","Web","Linux"]
+skills: ["Linux OS", "Assembly", "C"]
+
+# Recommended readings
+#    www.docker.com: 'Docker website'
+#    www.ubuntu.com: 'Ubuntu webpage'
+recommendations:
+    https://en.wikipedia.org/wiki/Integer_overflow: 'Integer Overflow - Wikipedia'
+
+# The emails of the Intellectual Property (IP) owners. Note that it is also possible that the owner is the same as the content creator.
+owners: ["Avielyo10@gmail.com"]
+
+# CRP Config
+crp_config:
+    controller:
+        # Required Linux capabilities (See http://man7.org/linux/man-pages/man7/capabilities.7.html for the full list).
+        # For example ["SETGID","SETUID"]
+        #capabilities: [] # Not needed if empty
+        ports: ['5555/controller']
+    solvable:
+        #capabilities: [] # Not needed if empty
+        ports: ['8888/http']
+
