@@ -7,18 +7,12 @@ name: "Integer Overflow - 102"
 # Challenge difficulty: 10 - 500
 difficulty: 100
 
-# Enable inputbox to submit flag: true | false
 enable_flag_input: true
 
-# If the solution is a fix string (static flag) you can add it here
 flag: "flag"
 
-# Skills related to the challenge: ["SQL injection","Web","Linux"]
 skills: ["Linux OS", "Assembly", "C"]
 
-# Recommended readings
-#    www.docker.com: 'Docker website'
-#    www.ubuntu.com: 'Ubuntu webpage'
 recommendations:
     https://en.wikipedia.org/wiki/Integer_overflow: 'Integer Overflow - Wikipedia'
 

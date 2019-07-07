@@ -7,6 +7,7 @@ WORKDIR /home/user/
 RUN chown -R user: /home/user
 
 USER user
+
 EXPOSE 8888
 
-CMD ["/home/user/vmmigration"]
+CMD socat TCP4-LISTEN:8888,fork,rcvbuf=1,reuseaddr EXEC:"./integerOverflow.o",stderr
