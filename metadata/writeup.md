@@ -1,19 +1,18 @@
-Dragon integer
+Integer Overflow 101
 ================
 
-## Understanding the problem
+## Understanding integer overflow
 
-Cost: 30%
+Cost: 10%
 
-It seems that whenever we attack the dragon, the dragon attack us back with more damage, seems it's not the way.
+Please read https://en.wikipedia.org/wiki/Integer_overflow very carefully.
 
-## Figuring out the relationship between the attack and heal
+## Disassemble the program using gdb 
 
-Cost: 60%
+Cost: 20%
 
-When we try to heal, the dragon heal himself more than we do.
+Read about gdb debugger, it will help you solve this problem right away!:)
 
 ## Complete solution
 
-As we figured out, the dragon deal more damage then we do, and also he heal himself more then we do, so what will happen if we "over heal" the dragon?
-Because the dragon health is "integer", when he reach the max integer value, it will become negative, which in the terms of the game, "dead" and we win.
+Using buffer overflow you can change the authorized value to be different than 0, then the flag will appear, so just enter lots of characters :)
